@@ -20,4 +20,98 @@ ul {
   list-style: none;
 }
 
-/* TODO: Add your styles here */
+body {
+  font-family: var(--font-family);
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+header p {
+  margin-top: 5px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  max-width: 700px;
+  margin-inline: auto;
+  padding: 30px;
+  background: var(--color-form-background);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h2 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-field {
+  flex: 1;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+fieldset {
+  border: 1px solid var(--color-border);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button[type="submit"] {
+  padding: 12px;
+  border: none;
+  background: var(--color-primary);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: var(--color-primary-dark);
+}
