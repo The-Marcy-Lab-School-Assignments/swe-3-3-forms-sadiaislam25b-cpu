@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYC Tech Summit 2026 - RSVP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>NYC Tech Summit 2026</h1>
+    <p>March 15, 2026 | 9:00 AM - 5:00 PM | Manhattan Conference Center</p>
+  </header>
+
+  <main>
+    <form>
+      <h2>Event RSVP</h2>
+
+      <!-- Row 1: First & Last Name -->
+      <div class="form-row">
+        <div class="form-field">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" required>
+        </div>
+        <div class="form-field">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" required>
+        </div>
+      </div>
+
+      <!-- Row 2: Email & Number of Tickets -->
+      <div class="form-row">
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-field">
+          <label for="tickets">Number of Tickets</label>
+          <input type="number" id="tickets" name="tickets" min="1" max="10" required>
+        </div>
+      </div>
+
+      <!-- Row 3: Lunch Preference (Radio Buttons) -->
+      <fieldset>
+        <legend>Lunch Preference</legend>
+        <label><input type="radio" name="lunch" value="Chicken"> Chicken</label>
+        <label><input type="radio" name="lunch" value="Fish"> Fish</label>
+        <label><input type="radio" name="lunch" value="Vegetarian"> Vegetarian</label>
+      </fieldset>
+
+      <!-- Row 4: Workshop Sessions (Checkboxes) -->
+      <fieldset>
+        <legend>Select Workshop Sessions (Check all that apply)</legend>
+        <label><input type="checkbox" name="workshop" value="Session 1"> Session 1</label>
+        <label><input type="checkbox" name="workshop" value="Session 2"> Session 2</label>
+        <label><input type="checkbox" name="workshop" value="Session 3"> Session 3</label>
+        <label><input type="checkbox" name="workshop" value="Session 4"> Session 4</label>
+        <label><input type="checkbox" name="workshop" value="Session 5"> Session 5</label>
+      </fieldset>
+
+      <!-- Row 5: Special Requests -->
+      <div class="form-field">
+        <label for="notes">Special Requests or Notes</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Dietary restrictions, accessibility needs, questions, etc."></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Complete RSVP</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 NYC Tech Summit</p>
+  </footer>
+</body>
+</html>
